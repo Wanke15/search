@@ -1,20 +1,19 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-  </div>
+    <Home />
 </template>
 
 <script>
-
+import Home from "./views/Home.vue"
 
 export default {
   name: 'App',
   components: {
+    Home
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

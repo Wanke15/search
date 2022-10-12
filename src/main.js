@@ -3,14 +3,20 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-// 导入组件库
-import ElementUI from "element-ui"
-// 导入样式
 import "element-ui/lib/theme-chalk/index.css"
-// 注册为全局组件
-Vue.use(ElementUI)
+import {Button, Form, FormItem, Input, Message, Container, Header, Aside, Main} from "element-ui"
+
+Vue.use(Button)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
 
 Vue.config.productionTip = false
+Vue.prototype.$message = Message
 
 /* eslint-disable no-new */
 new Vue({
