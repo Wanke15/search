@@ -1,14 +1,13 @@
 <template>
-    <router-view></router-view>
+<h3>登录组件</h3>    
 </template>
 
 <script>
-
 export default {
-  name: 'App'
+    
 }
 </script>
 
-<style>
+<style lang="less" scoped>
 
 </style>

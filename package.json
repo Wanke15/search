@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "element-ui": "^2.15.10",
-    "vue": "2.7.10"
+    "vue": "2.7.10",
+    "vue-router": "^4.1.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

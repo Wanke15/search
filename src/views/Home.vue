@@ -6,7 +6,6 @@
             <el-main>内容</el-main>
         </el-container>
     </el-container>
-
 </template>
 
 <script>
