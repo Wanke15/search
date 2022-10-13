@@ -1,6 +1,6 @@
 <template>
     <el-container class="home-container">
-        <el-header>朴朴搜索算法管理平台</el-header>
+        <el-header>搜索算法管理平台</el-header>
 
         <el-container>
             <el-aside width="200px">
@@ -22,7 +22,7 @@
         </el-menu-item-group>
         <el-submenu index="2-1">
           <template slot="title"><i class="el-icon-cpu"></i>排序模型</template>
-          <el-menu-item index="2-1-1">DeepFM</el-menu-item>
+          <el-menu-item index="2-1-1" @click="showDeepFM">DeepFM</el-menu-item>
           <el-menu-item index="2-1-2">MMoE</el-menu-item>
         </el-submenu>
       </el-submenu>
@@ -44,7 +44,7 @@
             </el-aside>
 
             <el-main>
-              
+              <router-view></router-view>
             </el-main>
 
         </el-container>
@@ -55,6 +55,17 @@
 import "element-ui/lib/theme-chalk/index.css"
 
 export default {
+  data() {
+          return {
+              
+          }
+      },
+
+  methods: {
+    showDeepFM: function() {
+      this.$router.push('/deepfm')
+    }
+  }
     
 }
 </script>
