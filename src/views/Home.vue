@@ -4,7 +4,7 @@
 
         <el-container>
             <el-aside width="200px">
-              <el-menu :default-openeds="['1', '2', '3']">
+              <el-menu :default-openeds="['1', '2', '3']" :router="true">
       <el-submenu index="1">
         <template slot="title"><i class="el-icon-search"></i>搜索&推荐</template>
         <el-menu-item-group>
@@ -20,11 +20,11 @@
           <el-menu-item index="2-1">财务类别打散</el-menu-item>
           <el-menu-item index="2-2">首页业务规则</el-menu-item>
         </el-menu-item-group>
-        <el-submenu index="2-1">
-          <template slot="title"><i class="el-icon-cpu"></i>排序模型</template>
-          <el-menu-item index="2-1-1" @click="showDeepFM">DeepFM</el-menu-item>
-          <el-menu-item index="2-1-2">MMoE</el-menu-item>
-        </el-submenu>
+        <el-menu-item-group>
+          <template slot="title">排序模型</template>
+          <el-menu-item index="/home/algoModel/deepfm">DeepFM</el-menu-item>
+          <el-menu-item index="/home/algoModel/mmoe">MMoE</el-menu-item>
+        </el-menu-item-group>
       </el-submenu>
 
       <el-submenu index="3">
@@ -42,7 +42,6 @@
 
     </el-menu>
             </el-aside>
-
             <el-main>
               <router-view></router-view>
             </el-main>
@@ -55,18 +54,7 @@
 import "element-ui/lib/theme-chalk/index.css"
 
 export default {
-  data() {
-          return {
-              
-          }
-      },
 
-  methods: {
-    showDeepFM: function() {
-      this.$router.push('/deepfm')
-    }
-  }
-    
 }
 </script>
 

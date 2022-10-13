@@ -1,8 +1,32 @@
 <template>
-    <img src="../assets/deepfm.png" alt="DeepFM" width="100%" />
+    <img :src="src" width="100%" />
 </template>
 
 <script>
+
+import deepfmImage from "../assets/deepfm.png"
+import mmoeImage from "../assets/mmoe.png"
+
 export default {
+    data() {
+        return {
+            imageDict: {
+                "deepfm": deepfmImage,
+                "mmoe": mmoeImage
+            },
+            src: ""
+        }
+    },
+    props: {
+        modelName: {
+            type: String
+        }
+    },
+    watch: {
+        modelName() {
+            this.src = this.imageDict[this.modelName]
+        }
+    }
+
 }
 </script>
