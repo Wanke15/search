@@ -24,6 +24,7 @@
           <template slot="title">排序模型</template>
           <el-menu-item index="/home/algoModel/deepfm">DeepFM</el-menu-item>
           <el-menu-item index="/home/algoModel/mmoe">MMoE</el-menu-item>
+          <el-menu-item index="/home/algoModel/ple">PLE</el-menu-item>
         </el-menu-item-group>
       </el-submenu>
 

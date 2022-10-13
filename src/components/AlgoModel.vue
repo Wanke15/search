@@ -6,13 +6,15 @@
 
 import deepfmImage from "../assets/deepfm.png"
 import mmoeImage from "../assets/mmoe.png"
+import pleImage from "../assets/ple.png"
 
 export default {
     data() {
         return {
             imageDict: {
                 "deepfm": deepfmImage,
-                "mmoe": mmoeImage
+                "mmoe": mmoeImage,
+                "ple": pleImage
             },
             src: ""
         }
