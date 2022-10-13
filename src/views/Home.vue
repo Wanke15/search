@@ -1,10 +1,10 @@
 <template>
     <el-container class="home-container">
-        <el-header>搜索域算法管理平台</el-header>
+        <el-header>朴朴搜索算法管理平台</el-header>
 
         <el-container>
             <el-aside width="200px">
-              <el-menu :default-openeds="['1', '2']">
+              <el-menu :default-openeds="['1', '2', '3']">
       <el-submenu index="1">
         <template slot="title"><i class="el-icon-search"></i>搜索&推荐</template>
         <el-menu-item-group>
@@ -20,12 +20,26 @@
           <el-menu-item index="2-1">财务类别打散</el-menu-item>
           <el-menu-item index="2-2">首页业务规则</el-menu-item>
         </el-menu-item-group>
-        <el-submenu index="2-3">
+        <el-submenu index="2-1">
           <template slot="title"><i class="el-icon-cpu"></i>排序模型</template>
-          <el-menu-item index="2-3-1">DeepFM</el-menu-item>
-          <el-menu-item index="2-3-2">MMoE</el-menu-item>
+          <el-menu-item index="2-1-1">DeepFM</el-menu-item>
+          <el-menu-item index="2-1-2">MMoE</el-menu-item>
         </el-submenu>
       </el-submenu>
+
+      <el-submenu index="3">
+        <template slot="title"><i class="el-icon-trophy"></i>质量管理</template>
+        <el-menu-item-group>
+          <template slot="title">业务</template>
+          <el-menu-item index="3-1">Diff竞品分析</el-menu-item>
+        </el-menu-item-group>
+        <el-menu-item-group index="3-3">
+          <template slot="title">算法</template>
+          <el-menu-item index="2-1">AB实验</el-menu-item>
+          <el-menu-item index="2-2">业务指标</el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
+
     </el-menu>
             </el-aside>
 
