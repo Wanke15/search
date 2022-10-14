@@ -39,7 +39,6 @@ export default {
   },
   methods: {
     resetLoginForm() {
-      console.log(this);
       this.$refs.loginFormRef.resetFields();
       this.loginForm.username = "";
       this.loginForm.password = "";
