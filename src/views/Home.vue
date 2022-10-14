@@ -25,32 +25,20 @@
             <template slot="title">
               <i class="el-icon-food"></i>最佳搭配
             </template>
-            <el-menu-item-group>
-              <template slot="title">策略</template>
               <el-menu-item index="2-1">财务类别打散</el-menu-item>
               <el-menu-item index="2-2">首页业务规则</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group>
-              <template slot="title">排序模型</template>
               <el-menu-item index="/home/algoModel/deepfm">DeepFM</el-menu-item>
               <el-menu-item index="/home/algoModel/mmoe">MMoE</el-menu-item>
               <el-menu-item index="/home/algoModel/ple">PLE</el-menu-item>
-            </el-menu-item-group>
           </el-submenu>
 
           <el-submenu index="3">
             <template slot="title">
               <i class="el-icon-trophy"></i>质量管理
             </template>
-            <el-menu-item-group>
-              <template slot="title">业务</template>
               <el-menu-item index="3-1">Diff竞品分析</el-menu-item>
-            </el-menu-item-group>
-            <el-menu-item-group index="3-3">
-              <template slot="title">算法</template>
               <el-menu-item index="2-1">AB实验</el-menu-item>
               <el-menu-item index="2-2">业务指标</el-menu-item>
-            </el-menu-item-group>
           </el-submenu>
         </el-menu>
       </el-aside>
@@ -62,7 +50,6 @@
 </template>
 
 <script>
-import "element-ui/lib/theme-chalk/index.css";
 
 export default {};
 </script>
