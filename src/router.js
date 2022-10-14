@@ -9,14 +9,14 @@ Vue.use(Router)
 
 export default new Router({
     routes: [
-        {path: '/', redirect: "/login"},
-        {path: '/login', component: Login},
+        { path: '/', redirect: "/login" },
+        { path: '/login', component: Login },
         {
-            path: '/home', 
+            path: '/home',
             component: Home,
             children: [
                 {
-                    path: "algoModel/:modelName", 
+                    path: "algoModel/:modelName",
                     component: AlgoModel,
                     props(route) {
                         return {
